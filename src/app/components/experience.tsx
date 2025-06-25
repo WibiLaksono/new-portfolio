@@ -19,7 +19,7 @@ export default function Experience() {
       company: "Gadjah Mada University",
       role: "Bachelor degree in Computer Science",
       duration: "July 2023 - Present",
-      imageURL: "/lambang-UGM.png",
+      imageURL: "/Lambang-UGM.png",
       ref: "https://cs.ugm.ac.id/",
     },
     {
