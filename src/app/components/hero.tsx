@@ -4,20 +4,20 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <div className="flex flex-col md:flex-row justify-between h-full py-10 px-6 md:px-20">
+        <div className="flex flex-col md:flex-row justify-between h-full pt-10 pb-5 px-6 md:px-20">
             <div className="max-w-xl animate-fade-in">
-                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight ">
+                <h1 className="text-2xl md:text-6xl font-extrabold leading-tight ">
                     Hi, I&#39;m Wibi <span className="inline-block animate-wave">👋</span>
                 </h1>
 
-                <p className="text-base md:text-xl mt-6 animate-fade-in">
+                <p className="text-sm md:text-lg lg:text-xl mt-6 animate-fade-in">
                     Software Developer with a strong passion for fullstack development and system design.
-                    I love bringing ideas to life — from scratch, architecture, technology choices, UI/UX design,
+                    I love bringing ideas to life from scratch, architecture, technology choices, UI/UX design,
                     implementation, testing, and deployment.
                 </p>
 
-                <h2 className="mt-10 font-bold text-xl">About</h2>
-                <p className="text-sm md:text-base mt-2">
+                <h2 className="mt-10 font-bold text-xl uppercase tracking-wider">About</h2>
+                <p className="text-xs md:text-base mt-2">
                     I mainly work with <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>,
                     <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Tailwind CSS</strong>,
                     <strong>PHP</strong>, and <strong>Node.js</strong>. I also actively explore advanced topics like
@@ -25,7 +25,7 @@ export default function Hero() {
                     <strong>IoT</strong>, and <strong>Scalable Application Development</strong>.
                 </p>
 
-                <p className="text-base mt-2">
+                <p className="text-xs md:text-base mt-2">
                     Currently, I’m studying Computer Science at <strong>Universitas Gadjah Mada</strong> 🎓
                     and continuously working on meaningful and impactful digital products.
                 </p>
@@ -37,7 +37,7 @@ export default function Hero() {
                     alt="Wibi Laksono"
                     width={170}
                     height={170}
-                    className="md:w-100 md:h-100 w-40 h-60 rounded-full border-4 shadow-lg shadow-gray-300/20 object-cover animate-float"
+                    className="md:w-100 md:h-100 w-30 h-50 rounded-full border-4 shadow-lg shadow-gray-300/20 object-cover animate-float"
                     style={{
                         borderColor: "var(--foreground)",
                     }}

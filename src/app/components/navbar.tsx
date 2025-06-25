@@ -30,7 +30,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full h-20 z-50 flex justify-center p-4">
       <div className="flex items-center space-x-4 px-6 py-3 rounded-4xl shadow-xl bg-black/60 text-white backdrop-blur-md">
-        <div className="text-sm font-bold border-r-2 pr-4 border-gray-400">
+        <div className="text-xs md:text-sm font-bold border-r-2 pr-4 border-gray-400">
           Wibi Laksono Wijaya
         </div>
 

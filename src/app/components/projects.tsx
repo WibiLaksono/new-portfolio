@@ -8,7 +8,7 @@ export default function Project() {
     {
       title: "Loax App",
       description:
-        "A fullstack app to help people sell and buy secondhand goods easily with Next.js, Express.js, PostgreSQL and Docker.",
+        "A fullstack app to help people sell and buy secondhand goods easily with Next.js, Express.js, MySQL and Docker.",
       date: "2025",
       website: "https://loax.vercel.app",
       source: "https://github.com/WibiLaksono/kuding-fix.git",
@@ -64,7 +64,7 @@ export default function Project() {
       date: "2024",
       website: "https://duniawibi.vercel.app",
       source: "https://github.com/WibiLaksono/portofolioBibi.git",
-      tag: "Fullstack Web, Next.js, Shadcn UI, Tailwind CSS",
+      tag: "FrontEnd Web, Next.js, Shadcn UI, Tailwind CSS",
       role: "Frontend Developer",
       imageURL: "/duniawibi.png",
     },
@@ -77,9 +77,18 @@ export default function Project() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-xl font-bold mb-8 uppercase tracking-wider"
+        className="font-bold text-lg mb-2 uppercase tracking-wider"
       >
         Selected Projects
+      </motion.h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="text-xs md:text-sm mb-8 tracking-wider"
+      >
+        These projects represent my journey as a developer  from building scalable web and mobile applications to experimenting with modern technologies like microservices, Docker, and AI. Each project showcases my ability to design intuitive user experiences, structure efficient backend logic, and collaborate within dynamic teams. Whether it&#39;s a marketplace for secondhand goods, an expense tracker, or an environmental reporting app, these works reflect my passion for solving real-world problems through code and creativity.
       </motion.h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
@@ -139,7 +148,7 @@ export default function Project() {
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: idx * 0.2 + 0.3 }}
                     viewport={{ once: true }}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold transition border"
+                    className="inline-flex items-center gap-2 px-3  hover:px-4 py-2 rounded-full text-xs font-semibold transition-all duration-100 border"
                     id="web-button"
                   >
                     🌐 Website
@@ -154,7 +163,7 @@ export default function Project() {
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: idx * 0.2 + 0.4 }}
                     viewport={{ once: true }}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold transition border"
+                    className="inline-flex items-center gap-2 px-3 hover:px-4 py-2 rounded-full text-xs font-semibold transition-all duration-100 border"
                     id="code-button"
                   >
                     🔗 Source Code
