@@ -1,6 +1,6 @@
+import Navbar from "@/app/components/navbar";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Navbar from "@/app/components/navbar";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -18,11 +18,22 @@ export const metadata: Metadata = {
   description:
     "A personal website managed by Wibi Laksono Wijaya. Contains portfolio, experiences, and contact information related to the works and professional activities of Wibi Laksono Wijaya.",
   keywords: [
-    "Wibi", "Wibi Laksono", "Wibi Laksono Wijaya", "Laksono", "Wijaya",
-    "Laksono Wijaya", "Wibi UGM", "Wibi Laksono UGM", 
-    "Wibi Laksono Wijaya UGM", "UGM", "Universitas Gadjah Mada",
-    "OmahTI", "Wibi Laksono Wijaya OmahTI", "Wibi OmahTI",
-    "OmahTI Learning Center", "OmahTI Academy"
+    "Wibi",
+    "Wibi Laksono",
+    "Wibi Laksono Wijaya",
+    "Laksono",
+    "Wijaya",
+    "Laksono Wijaya",
+    "Wibi UGM",
+    "Wibi Laksono UGM",
+    "Wibi Laksono Wijaya UGM",
+    "UGM",
+    "Universitas Gadjah Mada",
+    "OmahTI",
+    "Wibi Laksono Wijaya OmahTI",
+    "Wibi OmahTI",
+    "OmahTI Learning Center",
+    "OmahTI Academy",
   ],
   authors: [{ name: "Wibi Laksono Wijaya" }],
   creator: "Wibi Laksono Wijaya",
@@ -69,6 +80,31 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Wibi Laksono Wijaya",
+              url: "https://wibilaksono.vercel.app",
+              image: "https://wibilaksono.vercel.app/bibi.png",
+              sameAs: [
+                "https://www.linkedin.com/in/wibi-laksono-wijaya-4139672b6",
+                "https://github.com/WibiLaksono",
+              ],
+              jobTitle: "Software Developer",
+              alumniOf: {
+                "@type": "CollegeOrUniversity",
+                name: "Universitas Gadjah Mada",
+              },
+              worksFor: {
+                "@type": "Organization",
+                name: "OmahTI",
+              },
+            }),
+          }}
+        />
         <Navbar />
         {children}
       </body>
